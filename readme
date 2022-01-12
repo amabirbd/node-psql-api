@@ -1,0 +1,11 @@
+routes-
+    -crud route : create category and products
+    -categories route: list all categories
+    -category
+    -products
+    -product
+    -search
+storage-
+    - sql database
+performance-
+    -100k product.
