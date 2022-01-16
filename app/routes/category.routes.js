@@ -6,19 +6,14 @@ module.exports = (app) => {
   // Create a new categories
   router.post("/", categories.create);
 
-  // Retrieve all categories
   router.get("/", categories.findAll);
 
-  // Retrieve a single Tutorial with id
   router.get("/:id", categories.findOne);
 
-  // Update a Tutorial with id
   router.put("/:id", categories.update);
 
-  // Delete a Tutorial with id
   router.delete("/:id", categories.delete);
 
-  // Create a new Tutorial
   router.delete("/", categories.deleteAll);
 
   app.use("/api/categories", router);
